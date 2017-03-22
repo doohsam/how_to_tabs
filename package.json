@@ -2,6 +2,9 @@
   "name": "how_to_tabs",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "v6.9.1"
+  },
   "description": "Let's Code: Test-Driven Javascript\r ==================================",
   "main": "JakeFile.js",
   "dependencies": {
