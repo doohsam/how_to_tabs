@@ -1,5 +1,5 @@
 (function() {
-    "use strict";
+    "use strict"; //runtime error checking
 
     var semver = require("semver");
     
