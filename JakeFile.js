@@ -61,7 +61,10 @@
     task("test", function(){
         console.log("Testing JavaScript:");
         karma.run({
-            configFile: KARMA_CONFIG
+            configFile: KARMA_CONFIG,
+            expectedBrowsers: [
+                "Chrome 56.0.2924 (Windows 10 0.0.0)", "Edge 14.14393.0 (Windows 10 0.0.0)"
+            ]
         }, complete, fail);
     }, {async:true});
  
