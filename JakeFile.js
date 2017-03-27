@@ -1,3 +1,5 @@
+/*globals desc: false, task:false, fail:false */
+
 (function() {
     "use strict"; //runtime error checking
 
@@ -27,13 +29,25 @@
     desc("Lint JavaScript code");
 	task("lint", function() {
 		process.stdout.write("Linting JavaScript: ");
-
 		jshint.checkFiles({
 			files: [ "Jakefile.js", "src/javascript/**/*.js" ],
-			options: {},
+			options: {
+                bitwise: true,
+                eqeqeq: true,
+                freeze: true,
+                futurehostile: true,
+                latedef: "nofunc",
+                noarg: true,
+                nonbsp: true,
+                nonew: true,
+                strict: true,
+//                undef: true,
+
+                node: true,
+                browser:true
+            },
 			globals: {}
 		}, complete, fail);
 	}, { async: true });
 
-    
 }());
