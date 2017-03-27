@@ -64,7 +64,8 @@
             configFile: KARMA_CONFIG,
             expectedBrowsers: [
                 "Chrome 56.0.2924 (Windows 10 0.0.0)", "Edge 14.14393.0 (Windows 10 0.0.0)"
-            ]
+            ],
+            strict: true // cloud use: !process.env.loose but need jake loose=true on command line
         }, complete, fail);
     }, {async:true});
  
