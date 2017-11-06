@@ -8,7 +8,7 @@
     var karma = require("simplebuild-karma");
 
     var KARMA_CONFIG = "karma.conf.js";
-    var BROWSERS = ["Chrome 56.0.2924 (Windows 10 0.0.0)", "Edge 14.14393.0 (Windows 10 0.0.0)"];
+    var BROWSERS = ["Chrome 56.0.2924 (Windows 10 0.0.0)", "Edge 14.14393.0 (Windows 10 0.0.0)", "IE 11.0.0 (Windows 10 0.0.0)"];
 
 //***** General-purpose tasks */
 
